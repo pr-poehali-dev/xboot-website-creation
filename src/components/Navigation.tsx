@@ -1,5 +1,5 @@
 import { Dock } from "@/components/ui/dock";
-import Icon from "@/components/ui/icon";
+import { Home, Settings, History, Image } from "lucide-react";
 
 const Navigation = () => {
   const scrollToSection = (sectionId: string) => {
@@ -11,29 +11,29 @@ const Navigation = () => {
 
   const dockItems = [
     {
-      icon: Icon,
+      icon: Home,
       label: "Главная",
       onClick: () => scrollToSection("hero"),
     },
     {
-      icon: Icon,
+      icon: Settings,
       label: "Характеристики",
       onClick: () => scrollToSection("specs"),
     },
     {
-      icon: Icon,
+      icon: History,
       label: "История",
       onClick: () => scrollToSection("history"),
     },
     {
-      icon: Icon,
+      icon: Image,
       label: "Галерея",
       onClick: () => scrollToSection("gallery"),
     },
   ];
 
   return (
-    <div className="fixed bottom-8 left-0 right-0 z-50">
+    <div className="fixed bottom-2 left-0 right-0 z-50">
       <Dock items={dockItems} />
     </div>
   );
