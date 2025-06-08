@@ -69,7 +69,7 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
       <div
         ref={ref}
         className={cn(
-          "w-full h-64 flex items-center justify-center p-2",
+          "fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50",
           className,
         )}
       >
