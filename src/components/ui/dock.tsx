@@ -73,7 +73,7 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
           className,
         )}
       >
-        <div className="w-full max-w-4xl h-32 rounded-2xl flex items-center justify-center relative">
+        <div className="w-full max-w-3xl h-32 rounded-2xl flex items-center justify-center relative">
           <motion.div
             initial="initial"
             animate="animate"
