@@ -36,16 +36,15 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
               size="lg"
-              className="bg-yellow-600 hover:bg-yellow-700 text-black font-semibold px-8 py-3 text-lg"
+              className="bg-white/20 backdrop-blur-md border border-white/30 text-white font-semibold px-8 py-3 text-lg hover:bg-white/30 hover:border-white/50 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               <Icon name="Anchor" className="mr-2" />
               Исследовать историю
             </Button>
 
             <Button
-              variant="outline"
               size="lg"
-              className="border-gray-400 text-white hover:bg-gray-800 px-8 py-3 text-lg"
+              className="bg-yellow-400/20 backdrop-blur-md border border-yellow-400/40 text-yellow-100 font-semibold px-8 py-3 text-lg hover:bg-yellow-400/30 hover:border-yellow-400/60 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               <Icon name="Settings" className="mr-2" />
               Технические данные
